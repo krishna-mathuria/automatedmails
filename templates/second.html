@@ -1,0 +1,20 @@
+{% load crispy_forms_tags %}
+
+<h1>Please Upload your files.</h1>
+<!-- {% csrf_token %}
+<form action="third" method="POST" enctype="multipart/form-data">
+  <label>Upload your Excel File Here.</label>
+  <input
+    id="fileSelect"
+    type="file"
+    accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+  />
+  <label>Upload your html File Here.</label>
+  <input type="file" accept="text/html" />
+  <button type="submit">Submit</button>
+</form> -->
+
+<form action={% url 'third' %} method="POST" enctype="multipart/form-data">
+  {% csrf_token %} {{ form|crispy }}
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
