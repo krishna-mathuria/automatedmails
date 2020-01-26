@@ -25,7 +25,7 @@ SECRET_KEY = ')$zfjm#y#gk6(+g@!$@($#*xh956of6v2k!uhjjy8oaan(ko7r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['autohtmlmails.herokuapp.com']
 
 
 # Application definition
