@@ -2,7 +2,7 @@ asgiref==3.2.3
 beautifulsoup4==4.8.2
 Django==3.0.7
 django-crispy-forms==1.8.1
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 et-xmlfile==1.0.1
 html2text==2020.1.16
 jdcal==1.4.1
